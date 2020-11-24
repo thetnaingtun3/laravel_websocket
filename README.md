@@ -6,7 +6,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
+# Laravel WebSockets 🛰 Chat Example
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
@@ -60,3 +60,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # laravel_websocket
+## Usage
+
+1. Clone this repository
+`git clone git@github.com:qirolab/Laravel-WebSockets-Chat-Example.git`
+2. `composer install`
+3. `php artisan key:generate`
+4. `cp .env.example .env` and configure your database in .env file.
+5. Run migration to create tables in database.
+`php artisan migrate`
+6. Final step run websockets server.
+`php artisan websockets:serve`,
+
+Now test it in your browser.
